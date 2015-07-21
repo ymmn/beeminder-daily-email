@@ -83,7 +83,6 @@ def generate_daily_email_body(start_timestamp):
         len(goals), start_datetime.strftime(DT_FORMAT), end_datetime.strftime(DT_FORMAT)
     )
 
-    print goals
     for goal in goals:
         datapoints = Beeminder.get_datapoints(goal)
         today_datapoints = [dp for dp in datapoints if dp['timestamp'] >= start_timestamp and dp['timestamp'] < end_timestamp]
