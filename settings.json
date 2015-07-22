@@ -1,6 +1,6 @@
 {
-  "AUTH_TOKEN": "get_this_from_your_beeminder_account_settings",
-  "GMAIL_USER": "insert_your_gmail_username_here@gmail.com",
-  "GMAIL_PWD": "your_gmail_password",
-  "EMAIL_RECIPIENTS": ["recipient1@gmail.com", "recipient2@somewhere.com"]
+  "beeminder_auth_token": "get_this_from_your_beeminder_account_settings",
+  "gmail_email": "insert_your_gmail_username_here@gmail.com",
+  "gmail_password": "your_gmail_password",
+  "email_recipients": ["recipient1@gmail.com", "recipient2@somewhere.com"]
 }
