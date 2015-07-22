@@ -10,7 +10,7 @@ Sends a daily summary email of your goals on Beeminder.
 ```
 crontab -e
 
-# edit the path to point to the repo correctly
+# add the following line
 # this will trigger the email to be sent everyday at 1AM
 0 1 * * * python /path/to/repo/send-daily-email.py 
 ```
