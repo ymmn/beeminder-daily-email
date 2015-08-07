@@ -75,6 +75,9 @@ def generate_daily_email_body(start_timestamp):
     end_timestamp = start_timestamp + ONE_DAY
     goals = Beeminder.get_goals()
 
+    # ignore derailed goals
+    goals = [goal for goal in goals if not goal['lost']]
+
     start_datetime = datetime.datetime.fromtimestamp(start_timestamp)
     end_datetime = datetime.datetime.fromtimestamp(end_timestamp)
     DT_FORMAT = "%m/%d %H:%M"
